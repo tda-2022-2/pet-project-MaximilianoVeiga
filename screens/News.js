@@ -1,4 +1,3 @@
-import Constants from "expo-constants";
 import React, { useEffect, useState } from "react";
 import {
   ActivityIndicator, FlatList, SafeAreaView, StyleSheet, Text, View
@@ -69,7 +68,7 @@ export default function News() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    paddingTop: Constants.statusBarHeight,
+    paddingTop: 0,
   },
   content: {
     flex: 1,
@@ -83,6 +82,7 @@ const styles = StyleSheet.create({
   headlines: {
     fontSize: 25,
     fontWeight: "bold",
+    marginBottom: 5,
     lineHeight: 50,
     color: "#e63e2c",
   },
