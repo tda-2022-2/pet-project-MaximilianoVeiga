@@ -1,3 +1,4 @@
+import Constants from "expo-constants";
 import React, { useEffect, useState } from "react";
 import {
   ActivityIndicator, FlatList, SafeAreaView, StyleSheet, Text, View
@@ -68,7 +69,7 @@ export default function News() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    paddingTop: 0,
+    paddingTop: Constants.statusBarHeight,
   },
   content: {
     flex: 1,
